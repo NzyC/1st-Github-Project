@@ -1,0 +1,63 @@
+#main-heading{
+    font-size: 25px;
+    color: #000;
+    background-color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 10px;
+    margin: 0px 500px;
+    text-align: center;
+}
+
+.heading{
+    font-size: 18px;
+    color: #000;
+    background-color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 10px;
+    margin: 0px 500px;
+    text-align: center;
+}
+
+.initial-scenario{
+    display: block;
+
+}
+
+.displayflex{
+    display: flex;
+}
+
+.scenario-oneone{
+    display: flex;
+    flex-direction: row;
+}
+
+.scenario-onetwo{
+    display: flex;
+    flex-direction: column;
+}
+
+.scenario-twoone{
+    display: flex;
+    align-items: stretch;
+}
+
+.scenario-twotwo{
+    display: flex;
+    align-items: center;
+}
+
+.scenario-threeone{
+    display: flex;
+    justify-content: center;
+}
+
+.scenario-threetwo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scenario-threethree{
+    display: flex;
+    justify-content: space-around;
+}
