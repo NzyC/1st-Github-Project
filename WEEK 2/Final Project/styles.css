@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap');
 
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Prompt', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +9,7 @@
 
 .row {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -68,7 +67,7 @@ nav {
 }
 
 .nav__register {
-    padd
+    margin: 0 0px 0 48px;
 }
 
 .btn__purple {
@@ -76,6 +75,5 @@ nav {
     padding: 12px 40px;
     font-size: 24px;
     color: #fff;
-
     border-radius: 70px;
 }
