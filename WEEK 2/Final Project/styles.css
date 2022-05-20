@@ -9,7 +9,7 @@
 
 .row {
     width: 100%;
-    max-width: 1800px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@ a {
     font-size: 24px;
     text-decoration: none;
     color: #243e63;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .logo__treact {
@@ -35,6 +35,10 @@ a {
     font-size: 36px;
     font-weight: bold;
     color: #243e63;
+}
+
+.purple {
+    color: #6415ff;
 }
 
 /*
@@ -64,6 +68,13 @@ nav {
 
 .nav__link {
     margin: 0 24px;
+    font-weight: 300;
+}
+
+.nav__link a:hover {
+    color: #6415ff;
+    text-decoration: underline;
+    transition: all 800ms ease;
 }
 
 .nav__register {
@@ -76,4 +87,63 @@ nav {
     font-size: 24px;
     color: #fff;
     border-radius: 70px;
+}
+
+/*
+
+LANDING
+
+*/
+
+.landing {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 160px 0;
+}
+
+.landing__title {
+    font-size: 64px;
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+}
+
+.landing__left {
+    width: 40%;
+}
+
+.landing__illustration--wrapper {
+    width: 60%;
+}
+
+.landing__para {
+    font-size: 28px;
+    color: #243e63;
+    font-weight: 200;
+    padding-bottom: 40px;
+}
+
+.landing__input {
+    width: 85%;
+    padding: 40px 0 40px 24px;
+    border: 3px solid #e5e7eb;
+    border-radius: 500px;
+    position: relative;
+    font-size: 24px;
+    color: #e5e7eb;
+}
+
+.landing__input--wrapper {
+    margin-bottom: 96px;
+}
+
+.landing__input--wrapper .btn__purple {
+    position: absolute;
+    transform: translateX();
+    transform: translateY();
 }
