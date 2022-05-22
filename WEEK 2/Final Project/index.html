@@ -7,49 +7,128 @@
     <title>Free Modern React Templates &amp; Components for building landing pages and UIs - Treact</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+    <section class="landing">
         <nav>
-            <div class="row">
-                <div class="nav__wrapper">
-                    <div class="logo__treact">
-                    <img class="logo_img" src="./assets/logo.2c489fc4.svg" alt="">
-                    <h1 class="logo__title">
-                        Treact
-                    </h1>
+            <div class="nav__container">
+                <div class="nav__logo">
+                        <img class="nav__logo--img" src="./assets/logo.2c489fc4.svg" alt="">
+                    <a class="nav__logo--title">Treact</a>
                 </div>
                 <ul class="nav__links">
-                    <li class="nav__link"><a href="">About</a></li>
-                    <li class="nav__link"><a href="">Blog</a></li>
-                    <li class="nav__link"><a href="">Pricing</a></li>
-                    <li class="nav__link"><a href="">Contact Us</a></li>
-                    <li class="nav__link nav__register"><a href="">Login</a></li>
-                    <li class="nav__link nav__register"><button class="btn__purple">Sign In</button></li>
+                    <li><a href="" class="nav__link">About</a></li>
+                    <li><a href="" class="nav__link">Blog</a></li>
+                    <li><a href="" class="nav__link">Pricing</a></li>
+                    <li><a href="" class="nav__link">Contact Us</a></li>
+                    <li>
+                        <ul class="nav__links--register">
+                            <li><a class="nav__link--register" href="">Login</a></li>
+                            <li><button class="btn__purple">Sign Up</button></li>
+                        </ul>
+                    </li>
                 </ul>
-                </div>
             </div>
         </nav>
-        <section class="landing">
-            <div class="container">
-                <div class="landing__left">
-                    <h1 class="landing__title">
-                        Beautiful React Templates <span class="purple">for you.</span>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1 class="header__title">
+                        Beautiful React Templates <span class="purple__text">for you.</span>
                     </h1>
-                    <p class="landing__para">
-                        Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
-                    </p>
-                    <div class="landing__input--wrapper">
-                        <input type="email" class="landing__input" placeholder="Your Email Address">
-                        <button class="btn__purple">Get Started</button>
+                    <p class="header__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+                    <div class="header__input">
+                        <input type="email" class="header__input--bar" placeholder="Your E-Mail Address">
+                        <button class="btn__purple header__input--btn">Get Started</button>
                     </div>
-                    <p class="landing__image--label">OUR TRUSTED CUSTOMERS</p>
-                    <figure class="landing__img">
-                        <img src="./assets/customers-logo.png" alt="">
-                    </figure>
+                    <p class="header__pic__label">OUR TRUSTED CUSTOMERS</p>
+                    <img class="header__pic" src="./assets/customers-logo.png" alt="">
                 </div>
-                <figure class="landing__illustration--wrapper">
-                    <img src="./assets/design-illustration.svg" class="landing__illustration" alt="">
+                <figure class="header__img--wrapper">
+                    <img src="./assets/design-illustration.svg" alt="" class="header__img">
                 </figure>
             </div>
-        </section>
-</body>
+        </header>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section__title">
+                FEATURES
+            </h2>
+            <h3 class="section__header">
+                We Have Amazing <span class="purple__text">Service</span>
+            </h3>
+            <p class="section__para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat error 
+                a nisi cumque nulla illo corporis beatae temporibus pariatur?
+            </p>
+            <div class="features__main">
+                    <div class="features__container">
+                        <span class="features__img--container">
+                            <img src="./assets/icon1.svg" alt="" class="features__img features__img--1">
+                        </span>
+                        <div class="features__para--container">
+                            <h4 class="features__para--heading">Secure</h4>
+                            <p class="features__para">
+                                We strictly only deal with vendors that provide top notch security.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="features__container">
+                        <span class="features__img--container">
+                            <img src="./assets/icon2.svg" alt="" class="features__img">
+                        </span>
+                        <div class="features__para--container">
+                            <h4 class="features__para--heading">24/7 Support</h4>
+                            <p class="features__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, autem. Necessitatibus, possimus numquam.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="features__container">
+                        <span class="features__img--container">
+                            <img src="./assets/icon3.svg" alt="" class="features__img">
+                        </span>
+                        <div class="features__para--container">
+                            <h4 class="features__para--heading">Customizable</h4>
+                            <p class="features__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, autem. Necessitatibus, possimus numquam.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="features__container">
+                        <span class="features__img--container">
+                            <img src="./assets/icon4.svg" alt="" class="features__img">
+                        </span>
+                        <div class="features__para--container">
+                            <h4 class="features__para--heading">Reliable</h4>
+                            <p class="features__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, autem. Necessitatibus, possimus numquam.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="features__container">
+                        <span class="features__img--container">
+                            <img src="./assets/icon5.svg" alt="" class="features__img">
+                        </span>
+                        <div class="features__para--container">
+                            <h4 class="features__para--heading">Fast</h4>
+                            <p class="features__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, autem. Necessitatibus, possimus numquam.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="features__container">
+                        <span class="features__img--container">
+                            <img src="./assets/icon6.svg" alt="" class="features__img">
+                        </span>
+                        <div class="features__para--container">
+                            <h4 class="features__para--heading">Easy</h4>
+                            <p class="features__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, autem. Necessitatibus, possimus numquam.
+                            </p>
+                        </div>  
+                    </div>
+            </div>
+        </div>
+    </section>
 </html>
