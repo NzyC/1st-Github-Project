@@ -18,7 +18,7 @@ html {
 
 .container {
     max-width: 1920px;
-    margin: 184px 0;
+    margin: 184px 0 184px 0;
 }
 
 .section__title {
@@ -232,11 +232,16 @@ HEADER
 FEATURES
 
 */
+.features{
+    display: flex;
+    justify-content: center;
+}
 
 .features .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 0;
 }
 
 .features .container .section__para {
@@ -466,10 +471,196 @@ PRICING
 
 */
 
-.plan__header {
-    line-height: 0.7;
+.pricing .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 96px 0 10000px 0;
+    max-width: 1920px;
+}
+
+.pricing .section__para {
+    width: 50%;
+    text-align: center;
+}
+
+.pricing__main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 96px;
+}
+
+.pricing__plan {
+    width: calc(100% / 3.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan1__top,
+.plan3__top {
+    width: 100%;
+    height: 16px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top: 1px solid #e2e5ea;
+    border-left: 1px solid #e2e5ea;
+    border-right: 1px solid #e2e5ea;
+}
+
+.plan1__top {
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
+.plan3__top {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
 
+.plan__top {
+    width: 100%;
+    border-left: 1px solid #e2e5ea;
+    border-right: 1px solid #e2e5ea;
+    border-bottom: 3px solid #e2e5ea ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.plan2__background .plan__top {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    padding-top: 16px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.plan__middle {
+    width: 100%;
+    border-left: 1px solid #e2e5ea;
+    border-right: 1px solid #e2e5ea;
+    border-bottom: 3px solid #e2e5ea ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan2__background .plan__middle {
+    border-left: 1px solid #8094dd;
+    border-right: 1px solid #8094dd;
+    border-bottom: 3px solid #8094dd ;
+}
+
+.plan2__background .plan__top {
+    border-left: 1px solid #8094dd;
+    border-right: 1px solid #8094dd;
+    border-bottom: 3px solid #8094dd ;
+}
+
+.plan__bottom {
+    width: 100%;
+    border-left: 1px solid #e2e5ea;
+    border-right: 1px solid #e2e5ea;
+    border-bottom: 1px solid #e2e5ea;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan2__background .plan__bottom {
+    border-left: 1px solid #8094dd;
+    border-right: 1px solid #8094dd;
+    border-bottom: 3px solid #8094dd ;
+}
+
+.plan__title {
+    font-size: 32px;
+    padding: 48px 0 0 0;
+    font-weight: 600;
+}
+
+.plan__price {
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.pricing__plan .plan2__background {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan__description {
+    color: #a0aec0;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 56px;
+}
+
+.plan__points {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan__init--point {
+    font-size: 30px;
+    font-weight: 600;
+    color: #1a202c;
+    padding: 48px 0;
+}
+
+.plan__point {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 40px;
+    color: #718096;
+}
+
+.plan2__point {
+    color: #f7fafc;
+}
+
+.btn__plan1,
+.btn__plan2,
+.btn__plan3 {
+    font-size: 22px;
+    padding: 24px 96px;
+    border-radius: 50px;
+    transition: all 300ms ease;
+    border: none;
+    margin: 24px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn__plan1 {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);    
+    color: #fff;
+    transition: all 300ms ease;
+}
+
+.btn__plan2 {      
+    color: #6415FF;
+    transition: all 300ms ease;
+}
+
+.btn__plan3 {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);      
+    color: #fff;
+    transition: all 300ms ease;
+}
+
+.btn__plan1:hover,
+.btn__plan3:hover {
+    transform: translate(1px, -1px);
+    box-shadow: 1px 5px 10px 3px #e5e5e5;
+}
+
+.btn__plan2:hover {
+    transform: translate(1px, -1px);
+    box-shadow: 1px 5px 10px 3px rgb(76, 81, 191);
+    opacity: 0.9;
 }
