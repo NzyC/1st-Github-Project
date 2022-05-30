@@ -1,6 +1,0 @@
-// document.getElementById("count-el").innerText = 5
-
-let count = 7 + 2
-
-console.log(count)
-
