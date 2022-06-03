@@ -13,4 +13,4 @@ function logLapTime() {
     console.log(totalTime)
 }
 
-logLapTime()
+logLapTime
