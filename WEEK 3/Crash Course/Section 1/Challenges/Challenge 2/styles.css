@@ -1,0 +1,37 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 45px;
+    padding: 0;
+}
+
+.shoes__img {
+    width: 275px;
+    margin-bottom: 0;
+}
+
+.shoe__name {
+    font-size: 20px;
+    margin: 12px 45px;
+}
+
+.purchase__btn {
+    padding: 12px 36px;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 0 12px 45px;
+    transition: 300ms ease all;
+}
+
+.purchase__btn:hover {
+    -webkit-filter: brightness(95%);
+    transform: scale(0.9);
+}
+
+#error {
+    color: red;
+    margin: 0 45px;
+}
