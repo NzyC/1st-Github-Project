@@ -40,3 +40,19 @@
 // remove1Point()
 
 // console.log(myPoints)
+
+let age = 101
+
+// if (age < 21) {
+//     console.log("You can not enter the club!")
+// } else {
+//     console.log("Welcome!")
+// }
+
+if (age < 100) {
+    console.log("Not eligible")
+} else if (age === 100) {
+    console.log("Here is you birthday card from the King!")
+} else {
+    console.log("Not Eligible, you have already gotten one")
+}
