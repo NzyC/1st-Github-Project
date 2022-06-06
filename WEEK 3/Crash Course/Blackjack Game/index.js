@@ -39,8 +39,9 @@ function renderGame() {
 
 function newCard() {
     console.log("Drawing a new card from the deck!")
-    let thirdCard = Math.floor((Math.random() * 11) + 1)
-    sum += thirdCard
+    let card = Math.floor((Math.random() * 11) + 1)
+    sum += card
+    cards.push (card)
+    console.log(cards)
     renderGame()
 }
-
