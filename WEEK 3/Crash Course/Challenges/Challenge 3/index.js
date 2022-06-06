@@ -41,12 +41,6 @@
 // //     true
 // // ]
 
-// let messages = [
-//     "Hey, how's it going?",
-//     "I'm great, Thank you! How about you?",
-//     "All good, Been working in my portfolio lately."
-// ]
-
 // let newMessage = "Same here!"
 
 // messages.push ( newMessage )
@@ -60,3 +54,26 @@
 
 // }
 
+// for ( let i = 10; i < 109; i += 10) {
+
+//     console.log(i)
+
+// }
+
+// let messages = [
+//     "Hey, how's it going?",
+//     "I'm great, Thank you! How about you?",
+//     "All good, Been working in my portfolio lately.",
+//     "Same here!",
+//     "Great to here"
+// ]
+
+// for ( i = 0; i < messages.length; i += 1) {
+//     console.log(messages[i])
+// }
+
+let cards = [7, 3, 9]
+
+for ( let i = 0; i < cards.length; i++) {
+    console.log(cards[i])
+}
