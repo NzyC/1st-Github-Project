@@ -47,5 +47,26 @@
 // } else {
 // }
 
-let hands = ["rock", ]
-Math.random()
+// let hands = ["rock", "paper", "scissors"]
+// function getHand() {
+//     let randomIndex = Math.floor( Math.random() * 3 )
+//     return hands [randomIndex]
+// }
+
+// console.log(getHand())
+
+let fruit = [ "🍎",  "🍊", "🍎", "🍎", "🍊"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
+
+function sortFruit() {
+    for (let i = 0; i < fruit.length; i++) {
+        if (fruit[i] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else {
+            orangeShelf.textContent += "🍊"
+        }
+    }
+}
+
+sortFruit()
