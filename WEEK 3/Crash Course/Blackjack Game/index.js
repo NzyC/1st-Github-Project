@@ -59,6 +59,7 @@ function renderGame() {
         message = "You're out of the game!"
         isAlive = false
     }
+
     
     messageEl.textContent = message
 
