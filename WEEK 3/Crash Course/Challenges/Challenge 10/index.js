@@ -6,8 +6,12 @@
 
 // greetUser("Welcome back", "Nidal", "👋")
 
-function add(a, b) {
-    
+// add(3,4)
+
+function getFirst(arr) {
+    return arr[0]
 }
 
-console.log( add(3,4) )
+let firstCard = getFirst([10, 7])
+
+console.log(getFirst([10, 7]))
