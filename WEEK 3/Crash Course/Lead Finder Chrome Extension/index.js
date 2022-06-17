@@ -7,16 +7,13 @@ const deleteBtn = document.getElementById("delete-btn")
 const tabBtn = document.getElementById("tab-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 
+
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
-    renderLeads(myLeads)
+    render(leads)
 }
 
 tabBtn.addEventListener("click", function() {
-    // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-          
-    //  })
-    
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         console.log(tabs)
 
@@ -40,7 +37,7 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
-deleteBtn.addEventListener("dblclick", function() {
+deleteBtn.addEventListener("dblclick", function() { 
     localStorage.clear()
     myLeads = []
     render(myLeads)
