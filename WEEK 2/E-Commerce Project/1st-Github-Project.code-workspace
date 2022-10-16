@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"name": "SSH FS - cse",
+			"uri": "ssh://cse/import/glass/5/z5421936"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "1st-Github-Project"
+	}
+}
