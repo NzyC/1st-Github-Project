@@ -1,8 +1,12 @@
-import { getCustomProperty, incrementCustomProperty, setCustomProperty } from "./updateCustomProperty.js"
+import { 
+  getCustomProperty, 
+  incrementCustomProperty, 
+  setCustomProperty 
+} from "./updateCustomProperty.js"
 
 const dinoElem = document.querySelector("[data-dino]")
-const JUMP_SPEED = .45
-const GRAVITY = .0015
+const JUMP_SPEED = 0.45
+const GRAVITY = 0.0015
 const DINO_FRAME_COUNT = 2
 const FRAME_TIME = 100
 
@@ -22,7 +26,15 @@ export function setupDino() {
 
 export function updateDino(delta, speedScale) {
   handleRun(delta, speedScale)
-  handleJump()
+  handleJump(delta)
+}
+
+export function getDinoRect() {
+  return dinoElem.getBoundingClientRect()
+}
+
+export function setDinoLose() {
+  dinoElem.src = "./assets/dino-lose.png"
 }
 
 function handleRun(delta, speedScale) {
@@ -37,7 +49,6 @@ function handleRun(delta, speedScale) {
     currentFrameTime -= FRAME_TIME
   }
   currentFrameTime += delta * speedScale
-
 }
 
 function handleJump(delta) {
