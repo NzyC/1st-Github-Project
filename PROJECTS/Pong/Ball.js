@@ -1,4 +1,4 @@
-const INITIAL_VELOCITY = 0.035
+const INITIAL_VELOCITY = 0.025
 const VELOCITY_INCREASE = 0.00001
 
 export default class Ball {
@@ -39,8 +39,8 @@ export default class Ball {
   }
 
   update(delta) {
-    this.x += this.direction.x * INITIAL_VELOCITY * delta
-    this.y += this.direction.y * INITIAL_VELOCITY * delta
+    this.x += this.direction.x * this.velocity * delta
+    this.y += this.direction.y * this.velocity * delta
     this.velocity += VELOCITY_INCREASE * delta
     const rect = this.rect()
 
@@ -48,9 +48,9 @@ export default class Ball {
       this.direction.y *= -1
     }
 
-    if(rect.right >= window.innerWidth || rect.left <= 0) {
-      this.direction.x *= -1
-    }
+    // if(rect.right >= window.innerWidth || rect.left <= 0) {
+    //   this.direction.x *= -1
+    // }
   }
 }
 
