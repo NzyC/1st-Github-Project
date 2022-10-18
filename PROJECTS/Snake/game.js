@@ -29,7 +29,7 @@ window.requestAnimationFrame(main)
 function update() {
     updateSnake()
     updateFood()
-    chechDeath()
+    checkDeath()
 }
 
 function draw() {
@@ -38,7 +38,7 @@ function draw() {
     drawFood(gameBoard)
 }
 
-function chechDeath() {
+function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection() 
 }
 
