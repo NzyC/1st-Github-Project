@@ -12,7 +12,7 @@
     <img src="./assets/2.png" alt="Logo" width="600" height="445">
   </a>
   <a href="https://github.com/NzyC/Tic-Tac-Toe">
-    <img src="./assets/3.png" alt="Logo" width="600" height="445">
+    <img src="./assets/3.png" alt="Logo" width="600" height="345">
   </a>
 </div>
 <br />
