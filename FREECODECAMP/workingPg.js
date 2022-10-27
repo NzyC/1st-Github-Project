@@ -18,12 +18,12 @@ function cc(card) {
       count--;
       break;
   }
-  
+
   if (count > 0) {
     return count + " Bet"
   }
   return count + " Hold"
-  // Only change code above this line
+  
 }
 
 cc(3)
