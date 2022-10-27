@@ -1,7 +1,6 @@
 let count = 0;
 
 function cc(card) {
-  // Only change code below this line
   switch (card) {
     case 2:
     case 3:
@@ -23,7 +22,7 @@ function cc(card) {
     return count + " Bet"
   }
   return count + " Hold"
-  
+
 }
 
 cc(3)
