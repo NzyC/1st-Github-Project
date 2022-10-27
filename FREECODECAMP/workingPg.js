@@ -18,6 +18,7 @@ function cc(card) {
       count--;
       break;
   }
+  
   if (count > 0) {
     return count + " Bet"
   }
