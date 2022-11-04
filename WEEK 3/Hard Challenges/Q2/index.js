@@ -1,5 +1,6 @@
 function sortLowToHigh(arr) {
     return arr.sort((a, b) => a - b)
+
 }
 
-console.log(sortLowToHigh([1, 29, 33, 4]))
+console.log(sortLowToHigh([2, 6, 7, 3, 1]));

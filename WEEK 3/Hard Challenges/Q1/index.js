@@ -1,31 +1,15 @@
-// function showRating(rating) {
-//     let ovrRating = ''
-//     for (let i = 0; i < Math.floor(rating); i++) {
-//         ovrRating = ovrRating + '*'
-//         if (i !== Math.floor(rating) - 1) {    
-//             ovrRating = ovrRating + ' '
-//         }
-//     }
-//     if (!Number.isInteger(rating)) {
-//         ovrRating = ovrRating + ' .'
-//     }
-//     return ovrRating
-// }
-
-// console.log(showRating(109.5));
-
 function showRating(rating) {
-    let ovrRating = ''
-    for (let i = 0; i < Math.floor(rating); i++) {
-        ovrRating += '*'
-        if (i !== Math.floor(rating)) {
-            ovrRating += " "
+    let ratings = ""
+    for (let i = 0; i < Math.floor(rating); ++i) {
+        ratings += "*"
+        if (i !== Math.floor(rating) - 1) {
+            ratings += " "
         }
     }
-    if (!Number.isInteger(rating)) {
-        ovrRating += "."
+    if (rating > Math.floor(rating)) {
+        ratings += " ."
     }
-    return ovrRating
-}
+    return ratings
+} 
 
-console.log(showRating(1.5));
+console.log(showRating(3.5));
