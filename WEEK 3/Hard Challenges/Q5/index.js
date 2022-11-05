@@ -1,9 +1,10 @@
-function arrSum(arr) {
-    let sum = 0
-    for (let i = 0; i < arr.length; i++) {
-        sum = sum + arr[i]
-    }
-    return sum
+async function postsByUser(uid) {
+    let promise = await fetch('https://jsonplaceholder.typicode.com/posts');
+
+    const res = await promise.json()
+    
+    const posts = res.filter(elem => elem.userId === uid)
+    console.log(posts)
 }
 
-console.log(arrSum([0, -5, -10]));
+postsByUser(7)

@@ -1,9 +1,11 @@
-function progressiveSum(num) {
-    let sum = 0;
-    for (let i = 1; i <= num; i++) {
-        sum += i
-    }
-    return sum
+async function firstSixIncomplete() {
+    const todos = await fetch('https://jsonplaceholder.typicode.com/todos')
+
+    const res = await todos.json()
+    
+    let data = res.filter(elem => !elem.completed).slice(0, 6)
+
+    console.log(data);
 }
 
-console.log(progressiveSum(600));
+firstSixIncomplete()
