@@ -4,21 +4,26 @@
 
 function contact(event) {
   event.preventDefault();
-  // emailjs
-  //   .sendForm(
-  //     'service_ninx7lp',
-  //     'template_fpp8gjk',
-  //     event.target,
-  //     'lPLZsiOp8f-EMujJl'
-  //   ).then(() => {
-  //     console.log('this worked1')
-  //   })
-
-  const loading = document.querySelector("modal__overlay--loading");
-  const success = document.querySelector("modal__overlay--success");
+  const loading = document.querySelector(".modal__overlay--loading");
+  const success = document.querySelector(".modal__overlay--success");
   loading.classList += " modal__overlay--visible";
-  setTimeout(() => {
-    console.log('it worked 1')
-  }, 500);
+  emailjs
+    .sendForm(
+      'service_ninx7lp',
+      'template_fpp8gjk',
+      event.target,
+      'lPLZsiOp8f-EMujJl'
+    ).then(() => {
+      loading.classList.remove("modal__overlay--visible")
+      success.classList += " modal__overlay--visible"
+    }).catch(() => {
+      loading.classList.remove("modal__overlay--visible")
+      alert(
+        "The email service is temporary unavailable. Please contact me directly on nidal.chowdhury1@gmail.com"
+      )
+    })
+}
 
+function toggleModal() {
+  // toggle modal
 }
