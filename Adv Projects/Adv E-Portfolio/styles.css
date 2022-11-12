@@ -60,7 +60,7 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  border-color: #f06449;
+  border-color: #ff328f;
 }
 
 label {
@@ -101,7 +101,7 @@ label {
 }
 
 .orange {
-  color: #f06449 !important;
+  color: #ff328f !important;
 }
 
 .link__hover-effect {
@@ -210,7 +210,7 @@ LANDING PAGE
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: #ff328f;
   color: white;
   padding: 6px;
   width: 32px;
@@ -423,8 +423,8 @@ MODAL
 }
 
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: #ff328f;
+  border: 2px solid #ff328f;
   color: white;
   font-weight: 700;
   width: 100%;
@@ -440,8 +440,8 @@ MODAL
 }
 
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: #ff328f;
+  color: #ff328f;
 }
 
 .modal__overlay {
@@ -671,11 +671,11 @@ SHAPES
 
 @media (max-width: 768px) {
   .title {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .header__para {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .modal {
@@ -699,7 +699,7 @@ SHAPES
   }
 
   .header__para {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .nav__link:first-child {
