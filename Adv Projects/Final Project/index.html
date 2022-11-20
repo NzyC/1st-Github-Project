@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/4482ed8dd5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="container nav__container">
+      <div class="nav__wrapper">
+        <div class="logo">
+          <img src="./assets/SLATE_prev_ui.png" class="logo__img">
+        </div>
+        <ul class="nav__links">
+          <li class="nav__link click"><a href="">Home</a></li>
+          <li class="nav__link click"><a href="#entertaintment">Movies</a></li>
+          <li class="nav__link click"><button class="nav__btn">Contact</button></li>
+        </ul>
+      </div>
+      <p class="header__message">
+        Browse Our Movies
+      </p>
+      <div class="input__wrapper">
+        <input type="text" class="header__input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section id="entertaintment">
+    <div class="container top__landing">
+      <h1 class="landing__message">Search Results:</h1>
+      <select name="filter">
+        <option value="" disabled selected>Sort</option>
+        <option value="RATING">Rating</option>
+        <option value="RELEASE__DATE">Release</option>
+        <option value="ALPHABETICAL">A-Z</option>
+      </select>
+    </div>
+  </section>
+</body>
+
+</html>

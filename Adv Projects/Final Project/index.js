@@ -1,0 +1,1 @@
+// MOVIE API = https://www.omdbapi.com/?i=tt3896198&apikey=5d41d2f2&s=${}
