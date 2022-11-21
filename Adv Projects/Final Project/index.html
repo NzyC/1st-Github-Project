@@ -27,7 +27,7 @@
         Browse Our Movies
       </p>
       <div class="input__wrapper">
-        <input type="text" class="header__input">
+        <input id="searchInput" type="text" class="header__input">
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
     </div>
@@ -40,10 +40,15 @@
         <option value="" disabled selected>Sort</option>
         <option value="RATING">Rating</option>
         <option value="RELEASE__DATE">Release</option>
-        <option value="ALPHABETICAL">A-Z</option>
       </select>
     </div>
+    <div class="container">
+      <div class="film__card--container">
+      </div>
+    </div>
   </section>
+  
+  <script src="./index.js"></script>
 </body>
 
 </html>
