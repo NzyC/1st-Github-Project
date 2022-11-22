@@ -1,9 +1,9 @@
 // MOVIE API = https://www.omdbapi.com/?i=tt3896198&apikey=5d41d2f2&s=${}
 const filmCardContainerEl = document.querySelector(".film__card--container")
-const searchInputEl = document.getElementById("searchInput")
+const searchInputValue = document.getElementById("searchInput").value
 
 async function main() {
-  const movies = await fetch(`https:www.omdbapi.com/?i=tt3896198&apikey=5d41d2f2&s=${searchInputEl}`)
+  const movies = await fetch(`https:www.omdbapi.com/?i=tt3896198&apikey=5d41d2f2&s=harry`)
   const moviesData = await movies.json()
   const moviesNewData = moviesData.Search
   filmCardContainerEl.innerHTML = moviesNewData.map((e) => filmHTML(e)).slice(0, 6).join('')
