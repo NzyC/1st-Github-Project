@@ -32,7 +32,7 @@ async function renderMovies() {
   topLandingEl.classList.remove('dontShow')
   filmCardContainerEl.innerHTML = moviesData.Search.map((e) => filmHTML(e)).slice(0, 6).join('')
 }
-
+// please
 main()
 
 function filmHTML(film) {
