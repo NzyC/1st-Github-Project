@@ -27,19 +27,48 @@
         Browse Our Movies
       </p>
       <div class="input__wrapper">
-        <input id="searchInput" type="text" class="header__input" placeholder="Search for Movies">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="searchInput" type="text" class="header__input" placeholder="Search for Movies and TV Shows">
+        <i class="fa-solid magnifyIco fa-magnifying-glass"></i>
       </div>
     </div>
   </nav>
 
   <section id="entertaintment">
-    <div class="container top__landing">
+    <div class="dontShow loading">
+      <i class="spinner fa-sharp fa-solid fa-circle-notch"></i>
+    </div>
+    <div class="initial__landing container">
+
+      <div class="film__card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg" class="film__poster">
+        <h1 class="film__title">The Office</h1>
+        <p class="film__release">Year: 2005-2013</p>
+        <p class="film__type">Type: series</p>
+        <p class="film__type">IMDB ID: tt0386676</p>
+      </div>
+      
+      <div class="film__card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjA0MDc1NTk0Ml5BMl5BanBnXkFtZTgwMTk2ODA5NDM@._V1_SX300.jpg" class="film__poster">
+        <h1 class="film__title">New Girl</h1>
+        <p class="film__release">Year: 2011-2018</p>
+        <p class="film__type">Type: series</p>
+        <p class="film__type">IMDB ID: tt1826940</p>
+      </div>
+      
+      <div class="film__card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNmVmMmM5ZmItZDg0OC00NTFiLWIxNzctZjNmYTY5OTU3ZWU3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" class="film__poster">
+        <h1 class="film__title">Suits</h1>
+        <p class="film__release">Year: 2011-2019</p>
+        <p class="film__type">Type: series</p>
+        <p class="film__type">IMDB ID: tt1632701</p>
+      </div>
+    </div>
+    <div class="container top__landing dontShow">
       <h1 class="landing__message">Search Results:</h1>
-      <select name="filter">
+      <select name="filter" onchange="filterBooks(event)">
         <option value="" disabled selected>Sort</option>
-        <option value="RATING">Rating</option>
-        <option value="RELEASE__DATE">Release</option>
+        <option value="OLD_RELEASE">Old Releases</option>
+        <option value="NEW_RELEASE">New Releases</option>
       </select>
     </div>
     <div class="container bottom__landing">
