@@ -18,10 +18,6 @@ async function main() {
   })
 }
 
-function lol() {
-  console.log('hi')
-}
-
 async function renderMovies() {
   loadingEl.classList.remove('dontShow')
   initLandingEl.classList += ' dontShow'
@@ -32,7 +28,7 @@ async function renderMovies() {
   topLandingEl.classList.remove('dontShow')
   filmCardContainerEl.innerHTML = moviesData.Search.map((e) => filmHTML(e)).slice(0, 6).join('')
 }
-// please
+
 main()
 
 function filmHTML(film) {
